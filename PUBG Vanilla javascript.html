@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)file:///C:/Users/nourhanfattouh/Desktop/New%20folder/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>PUBG Vanilla javascript</title>
+        <link rel="stylesheet" href="./PUBG Vanilla javascript_files/style.css">
+    </head>
+    <body>
+        <section>
+            <audio id="audio" src="./imge/sound.wav" autostart="false"></audio>
+        </section>
+        <script type="text/javascript">
+        document.addEventListener("click", function(e)
+        {
+         var body =document.querySelector('body');
+         var bullet =document.createElement('span');
+         var x = e.offsetX;
+         var y = e.offsetY;
+         bullet.style.left = x+'px';
+         bullet.style.top = y+'px';
+         body.appendChild(bullet);
+
+         var audio = document.getElementById('audio')
+         ;
+         audio.play();
+        })
+        </script>
+    
+</body></html>
